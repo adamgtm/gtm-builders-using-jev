@@ -6,8 +6,6 @@ Hi, I'm Adam. I wanted to know the answer to "How are GTM builders actually usin
 
 Here it is. Give `how-are-gtm-builders-actually-using-jev.csv` to Claude, ChatGPT, Codex or anything else that reads a CSV, and start with the prompt below.
 
-On GitHub, `preview-top-50.csv` opens as a table if you want to see the shape of it first. `how-are-gtm-builders-actually-using-jev.csv` is the whole thing.
-
 ## How I built this
 
 I started with the posts my market tracker already had, then ran a lot of search variants with [Apify](https://apify.com/?fpr=adamgtm) for $1.98 to reach as much of the conversation as I could, but LinkedIn and X only give you so much, so treat this as a solid sample and not every post ever written about Jev. Then I had Jev, TypeSafe AI's decision model, label every post, which cost $0.64 in all, and checked its answers against 80 posts that Claude read in full and labeled before seeing what Jev said. If you want to answer your own question the same way, [sign up for Apify free](https://apify.com/?fpr=adamgtm) and point it at your topic.
