@@ -12,7 +12,7 @@ I started with the posts my market tracker already had, then ran a lot of search
 
 ## What's in the file
 
-1,530 rows, one per post, published between 2026-09-10 and 2026-10-01: 854 from LinkedIn and 676 from X. 16 columns:
+1,530 rows, one per post, published between 2026-09-10 and 2026-10-01: 854 from LinkedIn and 676 from X. 18 columns:
 
 | Column | What it is |
 |---|---|
@@ -32,6 +32,8 @@ I started with the posts my market tracker already had, then ran a lot of search
 | `jev_gtm_probability` | Jev's probability, from `0` to `1`, that the answer to the `gtm` question is yes. The question is below. |
 | `jev_real_build_probability` | Jev's answer to the `real_build` question. |
 | `jev_gtm_author_probability` | Jev's probability, from `0` to `1`, that the answer to the `gtm_author` question is yes. The question is below. |
+| `confirmed_real_gtm_build` | `yes` on the 61 posts where Claude read the post in full and found the author running Jev on their own data or workflow for a GTM job, with a result. Blank means not confirmed: not read in full, or read and not a real GTM build by that rule. |
+| `build_job` | The GTM job of a confirmed build. Blank when `confirmed_real_gtm_build` is. |
 
 I left out author profile URLs.
 
